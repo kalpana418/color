@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Background Color</title>
+
+<style>
+.pink
+{
+background-color:pink;
+}
+.red
+{
+    background-color: red;
+}
+.black
+{
+    background-color: black;
+}
+.green
+{
+    background-color: green;
+}
+.yellow
+{
+    background-color: yellow;
+}
+.brown
+{
+    background-color: brown;
+}
+.white{
+    background-color: white;
+}
+
+</style>
+
+
+</head>
+<script>
+    function colorbg(){
+        var x=document.getElementById("selectid");
+        var bgcolor=x.options[x.selectedIndex].value;
+document.body.style.backgroundColor=bgcolor;
+    }
+        
+    
+</script>
+
+
+<body>
+  <center>  
+<h1>change Background Color Via Text</h1>
+<h2>HTML-CSS Styles</h2>
+  </hr>
+<select id="selectid">
+<option value="" selected disabled hidden>-- select color --</option>
+<option class="pink">pink</option>
+<option class="red">red</option>
+<option class="black">black</option>
+<option class="green">green</option>
+<option class="yellow">yellow</option>
+<option class="brown">brown</option>
+<option class="white"></option>
+
+</select>
+<button onclick="colorbg()">Change The Background
+
+</button>
+</center>
+
+
+
+</body>
+</html>
